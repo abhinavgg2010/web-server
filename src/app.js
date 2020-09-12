@@ -11,7 +11,8 @@ app.get('', (req, res) => {
 app.get('/help', (req, res) => {
     res.send({
         a: 'bla',
-        b: 3
+        b: 3,
+        c: "nani deska"
     })
 })
 
