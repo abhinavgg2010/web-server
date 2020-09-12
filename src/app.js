@@ -2,6 +2,7 @@ const express = require('express')
 const { response } = require('express')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 app.get('', (req, res) => {
     res.send("hello Express!")
@@ -14,6 +15,6 @@ app.get('/help', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('server is up at port 3000')
+app.listen(port, () => {
+    console.log('server is up at port '+ port)
 })
